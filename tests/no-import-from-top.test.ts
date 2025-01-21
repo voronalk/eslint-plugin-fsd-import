@@ -1,5 +1,5 @@
 import { RuleTester } from "@typescript-eslint/utils/dist/ts-eslint";
-import myRule from "../rules/no-import-from-top";
+import myRule from "../src/rules/no-import-from-top";
 
 const ruleTester = new RuleTester({
   parser: "@typescript-eslint/parser",
