@@ -1,15 +1,14 @@
 {
-  "name": "fsd-import-rule",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "eslint-plugin-fsd-import",
+  "version": "0.0.1",
   "scripts": {
-    "test": "node tests/no-import-from-top.test.ts"
+    "test": "node tests/no-import-from-top.test.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
-  "description": "",
+  "description": "Plugin for checking imports path in FSD project",
   "devDependencies": {
     "@elbrus/eslint-config": "^1.0.0",
     "@eslint/js": "^9.18.0",
@@ -18,9 +17,5 @@
     "@typescript-eslint/utils": "^8.21.0",
     "eslint": "^9.18.0",
     "globals": "^15.14.0"
-  },
-  "dependencies": {
-    "@typescript-eslint/rule-tester": "^8.21.0",
-    "typescript-eslint": "^8.21.0"
   }
 }
