@@ -1,12 +1,19 @@
 {
   "name": "eslint-plugin-fsd-layers",
-  "version": "0.0.14",
+  "version": "0.0.16",
   "scripts": {
     "test": "node tests/no-import-from-top.test.js"
   },
+  "repository": "https://github.com/voronalk/eslint-plugin-fsd-import",
   "type": "module",
   "main": "./src/index.js",
-  "keywords": [],
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "fsd",
+    "feature-sliced"
+  ],
   "author": "",
   "license": "ISC",
   "description": "Plugin for checking imports path in FSD project",
