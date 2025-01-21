@@ -1,6 +1,6 @@
 {
-  "name": "eslint-plugin-fsd-import",
-  "version": "0.0.1",
+  "name": "eslint-plugin-fsd-layers",
+  "version": "0.0.14",
   "scripts": {
     "test": "node tests/no-import-from-top.test.js"
   },
