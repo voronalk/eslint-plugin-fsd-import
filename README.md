@@ -14,7 +14,7 @@ import fsdLayers from 'eslint-plugin-fsd-layers';
 
 {
   plugins: {
-    'fsd-layers': fdsLayers,
+    'fsd-layers': fsdLayers,
   }
 
   rules: {

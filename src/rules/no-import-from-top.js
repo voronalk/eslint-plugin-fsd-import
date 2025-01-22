@@ -26,8 +26,8 @@ const layers = {
   ],
   widgets: ['features', 'entities', 'shared', '4features', '5entities', '6shared'],
   features: ['entities', 'shared', '5entities', '6shared'],
-  entities: ['entities', 'shared', '6shared'],
-  shared: ['shared'],
+  entities: ['shared', '6shared'],
+  shared: [],
 };
 
 function getLayer(pathStr) {
@@ -78,6 +78,11 @@ const myRule = {
 
       // If no layer name found, dont warn
       if (!currentLayer || !importLayer) {
+        return;
+      }
+
+      // If import has type cpecifier, skip
+      if (node.importKind === "type") {
         return;
       }
 

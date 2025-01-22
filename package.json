@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-fsd-layers",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "scripts": {
     "test": "node tests/no-import-from-top.test.js"
   },
@@ -25,5 +25,8 @@
     "@typescript-eslint/utils": "^8.21.0",
     "eslint": "^9.18.0",
     "globals": "^15.14.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=9.0.0"
   }
 }
