@@ -2,31 +2,11 @@ import path from 'path';
 
 // layer names and allowed imports
 const layers = {
-  app: [
-    'pages',
-    'widgets',
-    'features',
-    'entities',
-    'shared',
-    '2pages',
-    '3widgets',
-    '4features',
-    '5entities',
-    '6shared',
-  ],
-  pages: [
-    'widgets',
-    'features',
-    'entities',
-    'shared',
-    '3widgets',
-    '4features',
-    '5entities',
-    '6shared',
-  ],
-  widgets: ['features', 'entities', 'shared', '4features', '5entities', '6shared'],
-  features: ['entities', 'shared', '5entities', '6shared'],
-  entities: ['shared', '6shared'],
+  app: ['pages', 'widgets', 'features', 'entities', 'shared'],
+  pages: ['widgets', 'features', 'entities', 'shared'],
+  widgets: ['features', 'entities', 'shared'],
+  features: ['entities', 'shared'],
+  entities: ['shared'],
   shared: [],
 };
 
@@ -82,7 +62,7 @@ const myRule = {
       }
 
       // If import has type cpecifier, skip
-      if (node.importKind === "type") {
+      if (node.importKind === 'type') {
         return;
       }
 
