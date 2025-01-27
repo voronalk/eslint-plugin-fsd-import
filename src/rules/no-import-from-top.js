@@ -2,12 +2,12 @@ import path from 'path';
 
 // layer names and allowed imports
 const layers = {
-  app: ['pages', 'widgets', 'features', 'entities', 'shared'],
-  pages: ['widgets', 'features', 'entities', 'shared'],
-  widgets: ['features', 'entities', 'shared'],
-  features: ['entities', 'shared'],
-  entities: ['shared'],
-  shared: [],
+  app: ['app', 'pages', 'widgets', 'features', 'entities', 'shared'],
+  pages: ['pages', 'widgets', 'features', 'entities', 'shared'],
+  widgets: ['widgets', 'features', 'entities', 'shared'],
+  features: ['features', 'entities', 'shared'],
+  entities: ['entities', 'shared'],
+  shared: ['shared'],
 };
 
 function getLayer(pathStr) {
